@@ -1,28 +1,107 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Festival hrane</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div class="navbar">
-        <h1><a href="index.html">Domov</a></h1>
-        <h1><a href="O festivalu.html">O festivalu</a></h1>
-        <h1><a href="Kontakt.html">Kontakt</a></h1>
+<html lang="sl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Festival hrane</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="navbar-custom">
+    <a href="index.html">Domov</a>
+    <a href="#">O festivalu</a>
+    <a href="#">Kontakt</a>
+  </div>
+  <div class="vsebina p-0">
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="burgir.jpg" class="d-block w-100 hero-img">
+          <div class="carousel-caption">
+            <h1>Najboljši burgerji v mestu</h1>
+            <a href="#" class="btn btn-primary btn-lg">Rezerviraj mizo</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="župa.jpg" class="d-block w-100 hero-img">
+          <div class="carousel-caption">
+            <h1>Festival okusov</h1>
+            <a href="#" class="btn btn-warning btn-lg">Poglej ponudbo</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="caked.jpg" class="d-block w-100 hero-img">
+          <div class="carousel-caption">
+            <h1>Sladice brez greha</h1>
+            <a href="#" class="btn btn-success btn-lg">Poglej ponudbo</a>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
     </div>
-    <div>
-        <h2>Dobrodošli na Festival hrane 2026!</h2>
-        <p>Pridružite se nam na nepozabnem kulinaričnem doživetju, kjer boste lahko poskusili najboljše jedi iz celega sveta. Naš festival ponuja široko paleto okusov, od tradicionalnih do sodobnih, in je idealen za vse ljubitelje hrane.</p>
-        <p>Ne zamudite priložnosti, da se potopite v svet kulinarike, spoznate nove okuse in uživate v družbi prijateljev in družine. Veselimo se vašega obiska!</p>
-    </div>
-    <div class="footer">
-        <footer>
-            <p>© Festival hrane 2026, Šolski projekt</p>
-        </footer>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  </body>
+    <section class="container py-5">
+      <h2 class="text-center mb-5">Kaj ponujamo?</h2>
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <img src="burgir22.jpg" class="img-fluid rounded-3 mb-3">
+          <h4>Burgerji</h4>
+          <p>Sočni burgerji iz vrhunskih sestavin.</p>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <img src="kitajc.jpg" class="img-fluid rounded-3 mb-3">
+          <h4>Azijska kuhinja</h4>
+          <p>Eksotični okusi in sveže pripravljene jedi.</p>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <img src="sladica.jpg" class="img-fluid rounded-3 mb-3">
+          <h4>Sladice</h4>
+          <p>Sladek zaključek festivala.</p>
+        </div>
+      </div>
+    </section>
+    <section class="container py-5">
+      <h2 class="text-center mb-5">Glavni kuharji</h2>
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100">
+            <img src="mare_šef.jpg" class="card-img-top">
+            <div class="card-body text-center">
+              <h5>Marko Novak</h5>
+              <p>Mojster za rebrca</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100">
+            <img src="ančka_šef.jpg" class="card-img-top">
+            <div class="card-body text-center">
+              <h5>Ana Kovač</h5>
+              <p>Kraljica sladic</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100">
+            <img src="lukec_šef7.jpg" class="card-img-top">
+            <div class="card-body text-center">
+              <h5>Luka Zupan</h5>
+              <p>Street food specialist</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <footer class="footer">
+    <p>© Festival hrane 2026 – Šolski projekt</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
 </html>

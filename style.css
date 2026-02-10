@@ -1,18 +1,48 @@
-.navbar{
-    background-color: #333;
-    overflow: hidden;
-    padding: 20px;
-    position: sticky;
-    top: 0;
+body {
+  background-image: url('background.png');
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  margin: 0;
+}
+.navbar-custom {
+  background-color: #222;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
 
+.navbar-custom a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
 }
-.navbar a{
-    color: white;
-    text-decoration: none;
-    padding: 20px;
-    
+
+.navbar-custom a:hover {
+  text-decoration: underline;
 }
-.footer{
-    text-align: center;
-    bottom: 0;
+.vsebina {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+.hero-img {
+  height: 80vh;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  background: rgba(0,0,0,0.6);
+  padding: 30px;
+  border-radius: 15px;
+}
+.card {
+  color: black;
+}
+.footer {
+  background-color: #222;
+  text-align: center;
+  padding: 20px;
 }
