@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="sl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kontakt</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="navbar-custom">
+    <a href="index.html">Domov</a>
+    <a href="o-festivalu.html">O festivalu</a>
+    <a href="kontakt.html">Kontakt</a>
+  </div>
+
+  <div class="vsebina">
+    <section class="container py-5">
+      <div class="row g-5">
+        <div class="col-lg-6">
+          <h2 class="mb-4">Rezerviraj mizo</h2>
+          <form class="needs-validation" novalidate>
+            <div class="mb-3">
+              <label class="form-label">Ime in priimek</label>
+              <input type="text" class="form-control" required>
+              <div class="invalid-feedback">
+                Vnesite ime in priimek.
+              </div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-control" required>
+              <div class="invalid-feedback">
+                Vnesite veljaven email.
+              </div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Število oseb</label>
+              <select class="form-select" required>
+                <option value="">Izberi...</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5+</option>
+              </select>
+              <div class="invalid-feedback">
+                Izberite število oseb.
+              </div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Datum in ura</label>
+              <input type="datetime-local" class="form-control" required>
+              <div class="invalid-feedback">
+                Izberite datum in uro.
+              </div>
+            </div>
+            <button class="btn btn-primary w-100" type="submit">
+              Pošlji
+            </button>
+          </form>
+        </div>
+        <div class="col-lg-6">
+          <h2 class="mb-4">Kontaktni podatki</h2>
+          <p><i class="bi bi-geo-alt-fill me-2"></i>Glavni trg 1, Ljubljana</p>
+          <p><i class="bi bi-telephone-fill me-2"></i>+386 40 123 456</p>
+          <p><i class="bi bi-envelope-fill me-2"></i>info@festivalhrane.si</p>
+          <div class="ratio ratio-4x3 mt-4">
+            <iframe 
+              src="https://www.google.com/maps?q=Ljubljana&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy">
+            </iframe>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </div>
+  <footer class="footer">
+    <p>© Festival hrane 2026 – Šolski projekt</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    (() => {
+      'use strict'
+      const forms = document.querySelectorAll('.needs-validation')
+
+      Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+          form.classList.add('was-validated')
+        }, false)
+      })
+    })()
+  </script>
+</body>
+</html>
